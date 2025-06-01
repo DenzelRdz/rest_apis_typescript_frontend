@@ -1,54 +1,80 @@
-# React + TypeScript + Vite
+# 🛍️ Client App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web construida con **React** y **TypeScript**, diseñada para la gestión de productos. Ofrece funcionalidades como visualización de detalles de productos y formularios para su creación o edición. Desarrollada con **Vite** para un rendimiento óptimo y configurada para su despliegue en **Vercel**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [React Router](https://reactrouter.com/)
+- [Vercel](https://vercel.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Instalación
+
+Clona el repositorio e instala las dependencias:
+
+```bash
+git clone https://github.com/tuusuario/tu-repo.git
+cd tu-repo
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧪 Ejecución en desarrollo
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm run dev
 ```
+
+Accede a la app en `http://localhost:5173`.
+
+---
+
+## ⚙️ Scripts disponibles
+
+- `npm run dev` – Ejecuta el servidor de desarrollo
+- `npm run build` – Compila la app para producción
+- `npm run preview` – Previsualiza la app en producción
+
+---
+
+## 🗂️ Estructura del proyecto
+
+```
+src/
+├── components/        # Componentes reutilizables (ProductForm, ProductDetails, etc.)
+├── layouts/           # Layout principal de la app
+├── router.tsx         # Configuración de rutas
+├── main.tsx           # Punto de entrada principal
+├── index.css          # Estilos globales
+```
+
+---
+
+## 📄 Despliegue
+
+El proyecto incluye configuración para desplegarse en [Vercel](https://vercel.com/) mediante el archivo `vercel.json`.
+
+---
+
+## 🔐 Variables de entorno
+
+Crea un archivo `.env.local` con las variables necesarias. Ejemplo:
+
+```env
+VITE_API_URL=https://tu-api.com
+```
+
+> Asegúrate de no subir este archivo al repositorio (está en `.gitignore`).
+
+---
+
+## 📝 Licencia
+
+Este proyecto está bajo la licencia [MIT](LICENSE).

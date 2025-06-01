@@ -1,6 +1,8 @@
-# 🛍️ Client App
+# 🛍️ Administrador de Productos
 
 Aplicación web construida con **React** y **TypeScript**, diseñada para la gestión de productos. Ofrece funcionalidades como visualización de detalles de productos y formularios para su creación o edición. Desarrollada con **Vite** para un rendimiento óptimo y configurada para su despliegue en **Vercel**.
+
+![FrontPage](https://github.com/user-attachments/assets/d9e07f05-25c2-4354-8bad-6d324cf59847)
 
 ---
 
